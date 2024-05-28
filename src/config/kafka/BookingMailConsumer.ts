@@ -48,7 +48,7 @@ export default class BookingMailConsumer {
   private createKafkaConsumer(): Consumer {
     const kafka = new Kafka({
       clientId: "booking.mail",
-      brokers: ["localhost:9092"],
+      brokers: ["ec2-34-234-196-243.compute-1.amazonaws.com:9092"],
     });
     const consumer = kafka.consumer({ groupId: "booking.mail-group" });
     return consumer;
