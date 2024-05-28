@@ -9,6 +9,4 @@ RUN npm install
 
 COPY . .
 
-RUN npm run dev
-
 CMD ["node", "dist/index.js"]
