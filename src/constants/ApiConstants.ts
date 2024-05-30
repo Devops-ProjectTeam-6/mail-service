@@ -8,6 +8,7 @@ export default {
   MAIL_SERVICE_API_V1: "/api/v1/mail-service",
   BOOKING_SERVICE_API_V1: "/api/v1/booking-service",
   AUTH_SERVER: "/api/v1/auth",
+  ORGANIZATION_SERVICE_API_V1: "/api/v1/organization-service",
 
   // API error code
   INTERNAL_SERVER_ERROR: "INTERNAL_SERVER_ERROR",
@@ -25,4 +26,5 @@ export default {
 
   // API error description
   DESCRIPTION_INTERNAL_SERVER_ERROR: "Something went wrong!",
+
 };

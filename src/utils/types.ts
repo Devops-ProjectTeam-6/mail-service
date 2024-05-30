@@ -5,3 +5,8 @@ export interface IMailServiceError {
   details: string;
   status: number;
 }
+
+export enum GenericValidInvalidEnum {
+  VALID,
+  INVALID,
+}

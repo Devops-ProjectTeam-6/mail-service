@@ -1,12 +1,7 @@
-#Build stage
-FROM node:16-alpine AS build
-
+FROM node:16-alpine
 WORKDIR /app
-
-COPY package*.json .
-
-RUN npm install
-
 COPY . .
-
-CMD ["node", "dist/index.js"]
+RUN npm install
+RUN npm run build
+EXPOSE 3000
+CMD ["npm","run", "start"]
