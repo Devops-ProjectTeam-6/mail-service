@@ -6,7 +6,7 @@ const eurekaClient = new Eureka({
   instance: {
     app: AppConstants.MAIL_SERVICE,
     hostName: "localhost",
-    ipAddr: "3.229.47.37",
+    ipAddr: "127.0.0.1",
     status: "UP",
     port: {
       $: 8089,
